@@ -1,0 +1,21 @@
+get http://localhost:3001
+
+###
+
+post http://localhost:3001/tinder/cards
+Content-Type: application/json
+
+[
+    {
+    "name":"Elon Musk",
+    "ingUrl":"https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+    },
+    {
+    "name":"Jeff Bezos",
+    "ingUrl":"https://wallpapercave.com/wp/wp4025632.jpg"
+    } 
+]
+
+###
+
+get http://localhost:3001/tinder/cards
